@@ -1,8 +1,11 @@
-https://universe.roboflow.com/roboflow-100/lettuce-pallets 
 
-1510 images
+## Run benchmark
 
-you can downloading using
+```
+pip install -r requirements.txt
+```
+
+You can download some data using
 
 ```bash
 mkdir data; cd data; curl -L "https://universe.roboflow.com/ds/MNwmAeNoBj?key=Hm9seGdI9X" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
@@ -26,4 +29,9 @@ data
     └── labels
 ```
 
-We'll use the `train` data.
+
+run
+
+```
+python main.py --help
+```
